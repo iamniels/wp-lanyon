@@ -28,7 +28,7 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home"><?php bloginfo('name' ); ?></a>
+            <a href="<?php bloginfo('url'); ?>" title="Home"><?php bloginfo('name' ); ?></a>
             <small><?php bloginfo('description') ?></small>
           </h3>
         </div>
