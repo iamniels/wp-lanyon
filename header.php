@@ -10,14 +10,6 @@
 
     <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-precomposed.png">
-    <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
-
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-
     <?php wp_head(); ?>
   </head>
 
