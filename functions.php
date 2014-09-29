@@ -65,3 +65,19 @@ function lanyon_sidebar_nav() {
   }
   echo $menu_list;
 }
+
+/**
+ * Add classes to next posts link.
+ */
+function lanyon_next_posts_link_attributes() {
+    return 'class="pagination-item newer"';
+}
+add_filter('next_posts_link_attributes', 'lanyon_next_posts_link_attributes');
+
+/**
+ * Add classes to previous posts link.
+ */
+function lanyon_previous_posts_link_attributes() {
+    return 'class="pagination-item older"';
+}
+add_filter('previous_posts_link_attributes', 'lanyon_previous_posts_link_attributes');

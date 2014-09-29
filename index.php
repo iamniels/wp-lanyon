@@ -18,4 +18,22 @@
   <?php endif; ?>
 
 </div>
+
+<div class="pagination">
+  <?php
+  $older = get_previous_posts_link( 'Older' );
+  $newer = get_next_posts_link( 'Newer');
+  ?>
+  <?php if ( $older ) : ?>
+    <?php echo $older ?>
+  <?php else : ?>
+    <span class="pagination-item older">Older</span>
+  <?php endif; ?>
+  <?php if ( $newer ) : ?>
+    <?php echo $newer; ?>
+  <?php else : ?>
+    <span class="pagination-item newer">Newer</span>
+  <?php endif; ?>
+</div>
+
 <?php get_footer(); ?>
