@@ -5,16 +5,11 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <?php echo get_theme_mod( 'lanyon_extended_description'); ?>
   </div>
 
   <nav class="sidebar-nav">
     <?php lanyon_sidebar_nav(); ?>
   </nav>
 
-  <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
-  </div>
 </div>

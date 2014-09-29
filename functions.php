@@ -9,6 +9,29 @@ function lanyon_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'lanyon_enqueue_scripts' );
 
 /**
+ * Implement Theme Customizer additions and adjustments.
+ *
+ * @since Twenty Fourteen 1.0
+ *
+ * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+ */
+function lanyon_customize_register( $wp_customize ) {
+  $wp_customize->add_section( 'lanyon_extended_description', array(
+    'title'       => __( 'Extended description', 'lanyon' ),
+    'description' => __( 'Add an extended description to be shown in sidebar.', 'lanyon'),
+    'priority'    => 100,
+  ) );
+  $wp_customize->add_setting( 'lanyon_extended_description', array(
+  ) );
+  $wp_customize->add_control( 'lanyon_extended_description', array(
+    'label'   => __( 'Text', 'lanyon' ),
+    'section' => 'lanyon_extended_description',
+    'type'    => 'text'
+  ) );
+}
+add_action( 'customize_register', 'lanyon_customize_register' );
+
+/**
  * Register menu.
  */
 function lanyon_register_menus() {
