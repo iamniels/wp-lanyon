@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
