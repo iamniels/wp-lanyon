@@ -1,0 +1,14 @@
+/*
+Theme Name: WP Lanyon
+Theme URI: http://lanyon.getpoole.com/
+Author: Mark Otto and Håvard Grimelid
+Description: WordPress version of Lanyon theme built for Jekyll
+Version: 1.0
+License: MIT License
+License URI: http://opensource.org/licenses/MIT
+Text Domain: lanyon
+*/
+
+@import "public/css/poole.css";
+@import "public/css/syntax.css";
+@import "public/css/lanyon.css";
