@@ -1,0 +1,18 @@
+{
+    "name": "iamniels/wp-lanyon",
+    "description": "Lanyon theme for Wordpress",
+    "keywords": ["wp","wordpress", "theme", "lanyon"],
+    "homepage": "https://github.com/iamniels/wp-lanyon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Otto",
+            "homepage": "https://github.com/mdo",
+            "role": "Developer"
+        }
+    ],
+    "type": "wordpress-theme",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
