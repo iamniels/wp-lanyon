@@ -81,3 +81,18 @@ function lanyon_previous_posts_link_attributes() {
     return 'class="pagination-item older"';
 }
 add_filter('previous_posts_link_attributes', 'lanyon_previous_posts_link_attributes');
+
+/**
+ * Remove the EditURI link from the header.
+ */
+remove_action ('wp_head', 'rsd_link');
+
+/**
+ * Remove the wlwmanifest link from the header.
+ */
+remove_action( 'wp_head', 'wlwmanifest_link');
+
+/**
+ * Remove the generator meta content from the header.
+ */
+remove_action('wp_head', 'wp_generator');
