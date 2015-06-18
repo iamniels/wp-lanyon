@@ -96,3 +96,12 @@ remove_action( 'wp_head', 'wlwmanifest_link');
  * Remove the generator meta content from the header.
  */
 remove_action('wp_head', 'wp_generator');
+
+/**
+ * Remove id from style tag to enable mod_pagespeed caching
+ * From: http://stackoverflow.com/a/28423203/507369
+ */
+function remove_style_id($link) {
+    return preg_replace("/id='.*-css'/", "", $link);
+}
+add_filter('style_loader_tag', 'remove_style_id');
