@@ -98,6 +98,17 @@ remove_action( 'wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'wp_generator');
 
 /**
+ * Remove short link
+ */
+remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+
+/**
+ * Add stylesheets
+ */
+wp_enqueue_style( 'poole', get_template_directory_uri() . '/public/css/poole.css');
+wp_enqueue_style( 'lanyon', get_template_directory_uri() . '/public/css/lanyon.css');
+
+/**
  * Remove id from style tag to enable mod_pagespeed caching
  * From: http://stackoverflow.com/a/28423203/507369
  */
